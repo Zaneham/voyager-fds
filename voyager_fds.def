@@ -1,0 +1,434 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN voyager_fds ;
+UNITS DISTANCE MICRONS 1000 ;
+DIEAREA ( 0 0 ) ( 200000 200000 ) ;
+TRACKS X 230 DO 435 STEP 460 LAYER li1 ;
+TRACKS Y 170 DO 588 STEP 340 LAYER li1 ;
+TRACKS X 170 DO 588 STEP 340 LAYER met1 ;
+TRACKS Y 170 DO 588 STEP 340 LAYER met1 ;
+TRACKS X 230 DO 435 STEP 460 LAYER met2 ;
+TRACKS Y 230 DO 435 STEP 460 LAYER met2 ;
+TRACKS X 340 DO 294 STEP 680 LAYER met3 ;
+TRACKS Y 340 DO 294 STEP 680 LAYER met3 ;
+TRACKS X 460 DO 217 STEP 920 LAYER met4 ;
+TRACKS Y 460 DO 217 STEP 920 LAYER met4 ;
+TRACKS X 1700 DO 59 STEP 3400 LAYER met5 ;
+TRACKS Y 1700 DO 59 STEP 3400 LAYER met5 ;
+GCELLGRID X 0 DO 28 STEP 6900 ;
+GCELLGRID Y 0 DO 28 STEP 6900 ;
+COMPONENTS 58 ;
+    - U20 sky130_fd_sc_hd__dfrtn_1 ;
+    - U21 sky130_fd_sc_hd__dfrtn_1 ;
+    - U22 sky130_fd_sc_hd__dfrtn_1 ;
+    - U493 sky130_fd_sc_hd__dfrtn_1 ;
+    - U494 sky130_fd_sc_hd__dfrtn_1 ;
+    - U495 sky130_fd_sc_hd__dfrtn_1 ;
+    - U496 sky130_fd_sc_hd__dfrtn_1 ;
+    - U497 sky130_fd_sc_hd__dfrtn_1 ;
+    - U498 sky130_fd_sc_hd__dfrtn_1 ;
+    - U499 sky130_fd_sc_hd__dfrtn_1 ;
+    - U50 sky130_fd_sc_hd__buf_1 ;
+    - U500 sky130_fd_sc_hd__dfrtn_1 ;
+    - U501 sky130_fd_sc_hd__dfrtn_1 ;
+    - U502 sky130_fd_sc_hd__dfrtn_1 ;
+    - U503 sky130_fd_sc_hd__dfrtn_1 ;
+    - U504 sky130_fd_sc_hd__dfrtn_1 ;
+    - U505 sky130_fd_sc_hd__dfrtn_1 ;
+    - U506 sky130_fd_sc_hd__dfrtn_1 ;
+    - U507 sky130_fd_sc_hd__dfrtn_1 ;
+    - U508 sky130_fd_sc_hd__dfrtn_1 ;
+    - U509 sky130_fd_sc_hd__dfrtn_1 ;
+    - U51 sky130_fd_sc_hd__buf_1 ;
+    - U510 sky130_fd_sc_hd__dfrtn_1 ;
+    - U511 sky130_fd_sc_hd__dfrtn_1 ;
+    - U512 sky130_fd_sc_hd__dfrtn_1 ;
+    - U513 sky130_fd_sc_hd__dfrtn_1 ;
+    - U514 sky130_fd_sc_hd__dfrtn_1 ;
+    - U515 sky130_fd_sc_hd__dfrtn_1 ;
+    - U516 sky130_fd_sc_hd__dfrtn_1 ;
+    - U517 sky130_fd_sc_hd__dfrtn_1 ;
+    - U518 sky130_fd_sc_hd__dfrtn_1 ;
+    - U519 sky130_fd_sc_hd__dfrtn_1 ;
+    - U52 sky130_fd_sc_hd__buf_1 ;
+    - U520 sky130_fd_sc_hd__dfrtn_1 ;
+    - U521 sky130_fd_sc_hd__dfrtn_1 ;
+    - U53 sky130_fd_sc_hd__buf_1 ;
+    - U54 sky130_fd_sc_hd__buf_1 ;
+    - U55 sky130_fd_sc_hd__buf_1 ;
+    - U56 sky130_fd_sc_hd__buf_1 ;
+    - U566 sky130_fd_sc_hd__dfrtn_1 ;
+    - U567 sky130_fd_sc_hd__dfrtn_1 ;
+    - U568 sky130_fd_sc_hd__dfrtn_1 ;
+    - U569 sky130_fd_sc_hd__dfrtn_1 ;
+    - U57 sky130_fd_sc_hd__buf_1 ;
+    - U570 sky130_fd_sc_hd__dfrtn_1 ;
+    - U571 sky130_fd_sc_hd__dfrtn_1 ;
+    - U572 sky130_fd_sc_hd__dfrtn_1 ;
+    - U573 sky130_fd_sc_hd__dfrtn_1 ;
+    - U574 sky130_fd_sc_hd__dfrtn_1 ;
+    - U575 sky130_fd_sc_hd__dfrtn_1 ;
+    - U576 sky130_fd_sc_hd__dfrtn_1 ;
+    - U577 sky130_fd_sc_hd__dfrtn_1 ;
+    - U578 sky130_fd_sc_hd__dfrtn_1 ;
+    - U58 sky130_fd_sc_hd__buf_1 ;
+    - U59 sky130_fd_sc_hd__buf_1 ;
+    - U60 sky130_fd_sc_hd__buf_1 ;
+    - U61 sky130_fd_sc_hd__buf_1 ;
+    - U62 sky130_fd_sc_hd__buf_1 ;
+END COMPONENTS
+PINS 63 ;
+    - clk + NET clk + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 68340 ) N ;
+    - halted + NET halted + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 115940 ) N ;
+    - mem_addr[0] + NET mem_addr[0] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 98260 ) N ;
+    - mem_addr[10] + NET mem_addr[10] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 100980 ) N ;
+    - mem_addr[11] + NET mem_addr[11] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 96900 ) N ;
+    - mem_addr[12] + NET mem_addr[12] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 107780 ) N ;
+    - mem_addr[1] + NET mem_addr[1] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 117300 ) N ;
+    - mem_addr[2] + NET mem_addr[2] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 102340 ) N ;
+    - mem_addr[3] + NET mem_addr[3] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 92820 ) N ;
+    - mem_addr[4] + NET mem_addr[4] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 125460 ) N ;
+    - mem_addr[5] + NET mem_addr[5] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 90100 ) N ;
+    - mem_addr[6] + NET mem_addr[6] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 118660 ) N ;
+    - mem_addr[7] + NET mem_addr[7] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 88740 ) N ;
+    - mem_addr[8] + NET mem_addr[8] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 87380 ) N ;
+    - mem_addr[9] + NET mem_addr[9] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 86020 ) N ;
+    - mem_rdata[0] + NET mem_rdata[0] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 2070 242 ) N ;
+    - mem_rdata[10] + NET mem_rdata[10] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 2990 242 ) N ;
+    - mem_rdata[11] + NET mem_rdata[11] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 3910 242 ) N ;
+    - mem_rdata[12] + NET mem_rdata[12] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 4830 242 ) N ;
+    - mem_rdata[13] + NET mem_rdata[13] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 5750 242 ) N ;
+    - mem_rdata[14] + NET mem_rdata[14] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 6670 242 ) N ;
+    - mem_rdata[15] + NET mem_rdata[15] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 7590 242 ) N ;
+    - mem_rdata[1] + NET mem_rdata[1] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 8510 242 ) N ;
+    - mem_rdata[2] + NET mem_rdata[2] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 9430 242 ) N ;
+    - mem_rdata[3] + NET mem_rdata[3] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 10350 242 ) N ;
+    - mem_rdata[4] + NET mem_rdata[4] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 11270 242 ) N ;
+    - mem_rdata[5] + NET mem_rdata[5] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 12190 242 ) N ;
+    - mem_rdata[6] + NET mem_rdata[6] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 13110 242 ) N ;
+    - mem_rdata[7] + NET mem_rdata[7] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 14030 242 ) N ;
+    - mem_rdata[8] + NET mem_rdata[8] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 14950 242 ) N ;
+    - mem_rdata[9] + NET mem_rdata[9] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -70 -242 ) ( 70 243 )
+        + PLACED ( 15870 242 ) N ;
+    - mem_re + NET mem_re + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 105060 ) N ;
+    - mem_wdata[0] + NET mem_wdata[0] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 120020 ) N ;
+    - mem_wdata[10] + NET mem_wdata[10] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 83300 ) N ;
+    - mem_wdata[11] + NET mem_wdata[11] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 81940 ) N ;
+    - mem_wdata[12] + NET mem_wdata[12] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 106420 ) N ;
+    - mem_wdata[13] + NET mem_wdata[13] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 91460 ) N ;
+    - mem_wdata[14] + NET mem_wdata[14] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 79220 ) N ;
+    - mem_wdata[15] + NET mem_wdata[15] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 121380 ) N ;
+    - mem_wdata[1] + NET mem_wdata[1] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 126820 ) N ;
+    - mem_wdata[2] + NET mem_wdata[2] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 77860 ) N ;
+    - mem_wdata[3] + NET mem_wdata[3] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 84660 ) N ;
+    - mem_wdata[4] + NET mem_wdata[4] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 76500 ) N ;
+    - mem_wdata[5] + NET mem_wdata[5] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 109140 ) N ;
+    - mem_wdata[6] + NET mem_wdata[6] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 75140 ) N ;
+    - mem_wdata[7] + NET mem_wdata[7] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 94180 ) N ;
+    - mem_wdata[8] + NET mem_wdata[8] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 129540 ) N ;
+    - mem_wdata[9] + NET mem_wdata[9] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 110500 ) N ;
+    - mem_we + NET mem_we + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 99620 ) N ;
+    - pc_out[0] + NET pc_out[0] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 122740 ) N ;
+    - pc_out[10] + NET pc_out[10] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 72420 ) N ;
+    - pc_out[11] + NET pc_out[11] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 111860 ) N ;
+    - pc_out[12] + NET pc_out[12] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 114580 ) N ;
+    - pc_out[1] + NET pc_out[1] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 71060 ) N ;
+    - pc_out[2] + NET pc_out[2] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 95540 ) N ;
+    - pc_out[3] + NET pc_out[3] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 113220 ) N ;
+    - pc_out[4] + NET pc_out[4] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 80580 ) N ;
+    - pc_out[5] + NET pc_out[5] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 128180 ) N ;
+    - pc_out[6] + NET pc_out[6] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 69700 ) N ;
+    - pc_out[7] + NET pc_out[7] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 124100 ) N ;
+    - pc_out[8] + NET pc_out[8] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 103700 ) N ;
+    - pc_out[9] + NET pc_out[9] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 130900 ) N ;
+    - rst_n + NET rst_n + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -400 -150 ) ( 400 150 )
+        + PLACED ( 199600 73780 ) N ;
+END PINS
+SPECIALNETS 2 ;
+    - VDD ( * VPB ) ( * VPWR ) + USE POWER ;
+    - VSS ( * VNB ) ( * VGND ) + USE GROUND ;
+END SPECIALNETS
+NETS 78 ;
+    - clk ( PIN clk ) ( U578 CLK_N ) ( U577 CLK_N ) ( U576 CLK_N ) ( U575 CLK_N ) ( U574 CLK_N ) ( U573 CLK_N )
+      ( U572 CLK_N ) ( U571 CLK_N ) ( U570 CLK_N ) ( U569 CLK_N ) ( U568 CLK_N ) ( U567 CLK_N ) ( U566 CLK_N ) ( U521 CLK_N )
+      ( U520 CLK_N ) ( U519 CLK_N ) ( U518 CLK_N ) ( U517 CLK_N ) ( U516 CLK_N ) ( U515 CLK_N ) ( U514 CLK_N ) ( U513 CLK_N )
+      ( U512 CLK_N ) ( U511 CLK_N ) ( U510 CLK_N ) ( U509 CLK_N ) ( U508 CLK_N ) ( U507 CLK_N ) ( U506 CLK_N ) ( U505 CLK_N )
+      ( U504 CLK_N ) ( U503 CLK_N ) ( U502 CLK_N ) ( U501 CLK_N ) ( U500 CLK_N ) ( U499 CLK_N ) ( U498 CLK_N ) ( U497 CLK_N )
+      ( U496 CLK_N ) ( U495 CLK_N ) ( U494 CLK_N ) ( U493 CLK_N ) ( U22 CLK_N ) ( U21 CLK_N ) ( U20 CLK_N ) + USE CLOCK ;
+    - halted ( PIN halted ) ( U22 Q ) + USE SIGNAL ;
+    - mem_addr[0] ( PIN mem_addr[0] ) ( U493 Q ) + USE SIGNAL ;
+    - mem_addr[10] ( PIN mem_addr[10] ) ( U503 Q ) + USE SIGNAL ;
+    - mem_addr[11] ( PIN mem_addr[11] ) ( U504 Q ) + USE SIGNAL ;
+    - mem_addr[12] ( PIN mem_addr[12] ) ( U505 Q ) + USE SIGNAL ;
+    - mem_addr[1] ( PIN mem_addr[1] ) ( U494 Q ) + USE SIGNAL ;
+    - mem_addr[2] ( PIN mem_addr[2] ) ( U495 Q ) + USE SIGNAL ;
+    - mem_addr[3] ( PIN mem_addr[3] ) ( U496 Q ) + USE SIGNAL ;
+    - mem_addr[4] ( PIN mem_addr[4] ) ( U497 Q ) + USE SIGNAL ;
+    - mem_addr[5] ( PIN mem_addr[5] ) ( U498 Q ) + USE SIGNAL ;
+    - mem_addr[6] ( PIN mem_addr[6] ) ( U499 Q ) + USE SIGNAL ;
+    - mem_addr[7] ( PIN mem_addr[7] ) ( U500 Q ) + USE SIGNAL ;
+    - mem_addr[8] ( PIN mem_addr[8] ) ( U501 Q ) + USE SIGNAL ;
+    - mem_addr[9] ( PIN mem_addr[9] ) ( U502 Q ) + USE SIGNAL ;
+    - mem_rdata[0] ( PIN mem_rdata[0] ) + USE SIGNAL ;
+    - mem_rdata[10] ( PIN mem_rdata[10] ) + USE SIGNAL ;
+    - mem_rdata[11] ( PIN mem_rdata[11] ) + USE SIGNAL ;
+    - mem_rdata[12] ( PIN mem_rdata[12] ) + USE SIGNAL ;
+    - mem_rdata[13] ( PIN mem_rdata[13] ) + USE SIGNAL ;
+    - mem_rdata[14] ( PIN mem_rdata[14] ) + USE SIGNAL ;
+    - mem_rdata[15] ( PIN mem_rdata[15] ) + USE SIGNAL ;
+    - mem_rdata[1] ( PIN mem_rdata[1] ) + USE SIGNAL ;
+    - mem_rdata[2] ( PIN mem_rdata[2] ) + USE SIGNAL ;
+    - mem_rdata[3] ( PIN mem_rdata[3] ) + USE SIGNAL ;
+    - mem_rdata[4] ( PIN mem_rdata[4] ) + USE SIGNAL ;
+    - mem_rdata[5] ( PIN mem_rdata[5] ) + USE SIGNAL ;
+    - mem_rdata[6] ( PIN mem_rdata[6] ) + USE SIGNAL ;
+    - mem_rdata[7] ( PIN mem_rdata[7] ) + USE SIGNAL ;
+    - mem_rdata[8] ( PIN mem_rdata[8] ) + USE SIGNAL ;
+    - mem_rdata[9] ( PIN mem_rdata[9] ) + USE SIGNAL ;
+    - mem_re ( PIN mem_re ) ( U21 Q ) + USE SIGNAL ;
+    - mem_wdata[0] ( PIN mem_wdata[0] ) ( U506 Q ) + USE SIGNAL ;
+    - mem_wdata[10] ( PIN mem_wdata[10] ) ( U516 Q ) + USE SIGNAL ;
+    - mem_wdata[11] ( PIN mem_wdata[11] ) ( U517 Q ) + USE SIGNAL ;
+    - mem_wdata[12] ( PIN mem_wdata[12] ) ( U518 Q ) + USE SIGNAL ;
+    - mem_wdata[13] ( PIN mem_wdata[13] ) ( U519 Q ) + USE SIGNAL ;
+    - mem_wdata[14] ( PIN mem_wdata[14] ) ( U520 Q ) + USE SIGNAL ;
+    - mem_wdata[15] ( PIN mem_wdata[15] ) ( U521 Q ) + USE SIGNAL ;
+    - mem_wdata[1] ( PIN mem_wdata[1] ) ( U507 Q ) + USE SIGNAL ;
+    - mem_wdata[2] ( PIN mem_wdata[2] ) ( U508 Q ) + USE SIGNAL ;
+    - mem_wdata[3] ( PIN mem_wdata[3] ) ( U509 Q ) + USE SIGNAL ;
+    - mem_wdata[4] ( PIN mem_wdata[4] ) ( U510 Q ) + USE SIGNAL ;
+    - mem_wdata[5] ( PIN mem_wdata[5] ) ( U511 Q ) + USE SIGNAL ;
+    - mem_wdata[6] ( PIN mem_wdata[6] ) ( U512 Q ) + USE SIGNAL ;
+    - mem_wdata[7] ( PIN mem_wdata[7] ) ( U513 Q ) + USE SIGNAL ;
+    - mem_wdata[8] ( PIN mem_wdata[8] ) ( U514 Q ) + USE SIGNAL ;
+    - mem_wdata[9] ( PIN mem_wdata[9] ) ( U515 Q ) + USE SIGNAL ;
+    - mem_we ( PIN mem_we ) ( U20 Q ) + USE SIGNAL ;
+    - one_ + USE POWER ;
+    - pc_out[0] ( PIN pc_out[0] ) ( U50 X ) + USE SIGNAL ;
+    - pc_out[10] ( PIN pc_out[10] ) ( U60 X ) + USE SIGNAL ;
+    - pc_out[11] ( PIN pc_out[11] ) ( U61 X ) + USE SIGNAL ;
+    - pc_out[12] ( PIN pc_out[12] ) ( U62 X ) + USE SIGNAL ;
+    - pc_out[1] ( PIN pc_out[1] ) ( U51 X ) + USE SIGNAL ;
+    - pc_out[2] ( PIN pc_out[2] ) ( U52 X ) + USE SIGNAL ;
+    - pc_out[3] ( PIN pc_out[3] ) ( U53 X ) + USE SIGNAL ;
+    - pc_out[4] ( PIN pc_out[4] ) ( U54 X ) + USE SIGNAL ;
+    - pc_out[5] ( PIN pc_out[5] ) ( U55 X ) + USE SIGNAL ;
+    - pc_out[6] ( PIN pc_out[6] ) ( U56 X ) + USE SIGNAL ;
+    - pc_out[7] ( PIN pc_out[7] ) ( U57 X ) + USE SIGNAL ;
+    - pc_out[8] ( PIN pc_out[8] ) ( U58 X ) + USE SIGNAL ;
+    - pc_out[9] ( PIN pc_out[9] ) ( U59 X ) + USE SIGNAL ;
+    - pr_0 ( U566 Q ) ( U50 A ) + USE SIGNAL ;
+    - pr_1 ( U567 Q ) ( U51 A ) + USE SIGNAL ;
+    - pr_10 ( U60 A ) ( U576 Q ) + USE SIGNAL ;
+    - pr_11 ( U61 A ) ( U577 Q ) + USE SIGNAL ;
+    - pr_12 ( U62 A ) ( U578 Q ) + USE SIGNAL ;
+    - pr_2 ( U568 Q ) ( U52 A ) + USE SIGNAL ;
+    - pr_3 ( U569 Q ) ( U53 A ) + USE SIGNAL ;
+    - pr_4 ( U570 Q ) ( U54 A ) + USE SIGNAL ;
+    - pr_5 ( U571 Q ) ( U55 A ) + USE SIGNAL ;
+    - pr_6 ( U572 Q ) ( U56 A ) + USE SIGNAL ;
+    - pr_7 ( U573 Q ) ( U57 A ) + USE SIGNAL ;
+    - pr_8 ( U58 A ) ( U574 Q ) + USE SIGNAL ;
+    - pr_9 ( U59 A ) ( U575 Q ) + USE SIGNAL ;
+    - rst_n ( PIN rst_n ) ( U578 RESET_B ) ( U577 RESET_B ) ( U576 RESET_B ) ( U575 RESET_B ) ( U574 RESET_B ) ( U573 RESET_B )
+      ( U572 RESET_B ) ( U571 RESET_B ) ( U570 RESET_B ) ( U569 RESET_B ) ( U568 RESET_B ) ( U567 RESET_B ) ( U566 RESET_B ) ( U521 RESET_B )
+      ( U520 RESET_B ) ( U519 RESET_B ) ( U518 RESET_B ) ( U517 RESET_B ) ( U516 RESET_B ) ( U515 RESET_B ) ( U514 RESET_B ) ( U513 RESET_B )
+      ( U512 RESET_B ) ( U511 RESET_B ) ( U510 RESET_B ) ( U509 RESET_B ) ( U508 RESET_B ) ( U507 RESET_B ) ( U506 RESET_B ) ( U505 RESET_B )
+      ( U504 RESET_B ) ( U503 RESET_B ) ( U502 RESET_B ) ( U501 RESET_B ) ( U500 RESET_B ) ( U499 RESET_B ) ( U498 RESET_B ) ( U497 RESET_B )
+      ( U496 RESET_B ) ( U495 RESET_B ) ( U494 RESET_B ) ( U493 RESET_B ) ( U22 RESET_B ) ( U21 RESET_B ) ( U20 RESET_B ) + USE SIGNAL ;
+    - zero_ ( U578 D ) ( U577 D ) ( U576 D ) ( U575 D ) ( U574 D ) ( U573 D ) ( U572 D )
+      ( U571 D ) ( U570 D ) ( U569 D ) ( U568 D ) ( U567 D ) ( U566 D ) ( U521 D ) ( U520 D )
+      ( U519 D ) ( U518 D ) ( U517 D ) ( U516 D ) ( U515 D ) ( U514 D ) ( U513 D ) ( U512 D )
+      ( U511 D ) ( U510 D ) ( U509 D ) ( U508 D ) ( U507 D ) ( U506 D ) ( U505 D ) ( U504 D )
+      ( U503 D ) ( U502 D ) ( U501 D ) ( U500 D ) ( U499 D ) ( U498 D ) ( U497 D ) ( U496 D )
+      ( U495 D ) ( U494 D ) ( U493 D ) ( U22 D ) ( U21 D ) ( U20 D ) + USE GROUND ;
+END NETS
+END DESIGN
