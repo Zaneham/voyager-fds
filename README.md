@@ -62,6 +62,10 @@ It has been running for 48 years without a reboot. Your phone struggles to make 
 
 We thought someone should be able to hold that computer in their hand.
 
+## Built With
+
+Synthesised using [Takahe](https://github.com/Zaneham/takahe), an open-source SystemVerilog/VHDL synthesiser. Placed via [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD).
+
 ## License
 
 MIT. The instruction set is from a 1974 JPL memo (US government, public domain). The implementation is original.
