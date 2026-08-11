@@ -52,6 +52,8 @@ docker run -v $(pwd):/work openroad/orfs \
 
 Submit the layout to [TinyTapeout](https://tinytapeout.com) for a SKY130 shuttle run. ~$150 for a tile. 12-16 weeks to silicon. The computer that went to Neptune, in your hand.
 
+NOTE: Do this at your own discretion. I am not a chip designer by trade just someone messing around.
+
 ## History
 
 The FDS was designed by JPL engineers in the early 1970s. The architecture memo is dated October 7, 1974. Voyager 1 launched September 5, 1977. Voyager 2 launched August 20, 1977.
